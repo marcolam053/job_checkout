@@ -1,0 +1,201 @@
+.pr-10 {
+    padding-right: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.nav {
+    color: aqua;
+}
+
+.btn-round {
+    border-radius: 20px;
+}
+
+.bold {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.close-icon {
+    cursor: pointer;
+}
+
+.prompt-paragraph {
+    font-size: 19px;
+}
+
+/*Plan Card CSS*/
+.grid-container {
+    display: grid;
+    justify-content: center;
+    ;
+    grid-template-columns: 250px 1200px;
+    /*Make the grid smaller than the container*/
+    grid-template-rows: 500px;
+    grid-gap: 10px;
+    padding: 70px;
+}
+
+.Account-Details {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.Shopping-cart {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.bill {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 25px;
+    padding-left: 0px;
+}
+
+.name {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+
+.user-title,
+.offer,
+.organisation {
+    text-align: left;
+    font-size: 18px;
+}
+
+
+
+.round-corner {
+    border-radius: 5px;
+    border: 3px;
+}
+
+.sub-title {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.photo-title {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.account {
+    width: 89%;
+}
+
+.plan-title {
+    padding-top: 5px;
+    font-size: 25px;
+    padding-left: 10px;
+    height: 50px;
+}
+
+.plan-card {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.plan-card-title {
+    padding-top: 5px;
+    font-size: 25px;
+    padding-left: 10px;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    height: 80px;
+}
+
+.plan-grid {
+    display: grid;
+    padding-top: 35px;
+    justify-content: space-evenly;
+    grid-column-gap: 50px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.plan-sub-title {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.plan-name {
+    text-align: left;
+    font-size: 18px;
+}
+
+.right {
+    padding-right: 15px;
+}
+
+.tick {
+    color: green;
+}
+
+.cross {
+    color: red;
+}
+
+.counter {
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+
+.cart-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1000px;
+    grid-template-rows: 254px;
+    grid-gap: 10px;
+    padding: 70px;
+}
+
+.prompt-title {
+    font-size: 30px;
+    font-weight: 500;
+}

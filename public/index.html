@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Seek : Plan Selection</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Seek : Check Out.">
+    <meta name="keywords" content="cart, job, check out">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Fanicon -->
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+</head>
+
+<body>
+
+    <!-- Menu bar -->
+    <nav class="nav light-blue darken-4">
+        <div>
+            <a class="pl-20 bold">Your Dashboard - Check Out</a>
+            <ul class="right" id="nav-mobile">
+                <li class="pr-10"><button class="wave-effect wave-light btn red darken-4">Log Out</button></li>
+            </ul>
+            <ul class="right" id="nav-mobile">
+                <li class="pr-10"><button class="pl-10 wave-effect wave-light btn green darken-1" id="cart" onclick="window.location.href='cart.html'"><i class="fa fa-shopping-cart pr-10"></i>cart</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div>
+        <div class="card grey darken-3 ">
+            <div class="card-content white-text">
+                <span class="title">Hi There !</span>
+                <p class="card-paragraph">Next, Choose the type and quantity of Ad you want and add to cart !</p>
+            </div>
+            <span class="clickable close-icon halfway-fab btn-floating  waves-effect waves-light orange" data-effect="fadeOut"><i class="fa fa-times"></i>exit</span>
+        </div>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- Account Detail -->
+        <div class="account">
+            <div class="card round-corner">
+                <div class="card-image">
+                    <img src="./img/profilephoto1.jpg">
+                    <span class="card-title bold">James Ford</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-dark blue-grey"><i class="fa fa-cog"></i></a>
+                </div>
+                <div class="card-content">
+                    <p class="sub-title">Position:</p>
+                    <p class="user-title">Recruiter</p>
+                    <p class="sub-title">Organisation:</p>
+                    <p class="organisation">Unilever</p>
+                    <p class="sub-title">Special Offer:</p>
+                    <p class="offer">3 for 2 on Classic Ad</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- plan grid -->
+        <div class="card round-corner">
+            <p class="plan-card-title blue-grey pt-20 bold">Choose your Plan</p>
+            <div class="plan-grid">
+
+                <!-- Classic Plan -->
+                <div class="plan-card round-corner">
+                    <div class="plan-card-title green darken-1 bold">CLASSIC
+                        <br><span class="right">$ 269.99</span>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="sub-title">Plan Name:</p>
+                        <p class="user-title">Classic Plan</p>
+                        <p class="sub-title">Description:</p>
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Affortable and standard</p>
+                        <p class="user-title"><i class="fa fa-times pr-10 cross"></i>company logo</p>
+                        <p class="user-title"><i class="fa fa-times pr-10 cross"></i>Higher Visability</p>
+                    </div>
+                    <a class="btn btn-block round-corner" id="classic" onclick="AddClassic()">Add to cart</a>
+                </div>
+
+                <!-- Standout Plan -->
+                <div class="plan-card round-corner">
+                    <div class="plan-card-title amber darken-3 bold">STANDOUT
+                        <br><span class="right">$ 322.99</span>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="sub-title">Plan Name:</p>
+                        <p class="user-title">Standout Plan</p>
+                        <p class="sub-title">Description:</p>
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Eveything in Basic</p>
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Use company Logo</p>
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Longer Presentation text</p>
+                    </div>
+                    <a class="btn btn-block" id="standout" onclick="AddStandout()">Add to cart</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan-card round-corner">
+                    <div class="plan-card-title deep-purple accent-2 bold">PREMIUM
+                        <br><span class="right">$ 394.99</span>
+                    </div>
+
+                    <div class="card-content">
+                        <p class="sub-title">Plan Name:</p>
+                        <p class="user-title">Premium Plan</p>
+                        <p class="sub-title">Description:</p>
+
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Use company Logo</p>
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Longer Presentation text</p>
+                        <p class="user-title"><i class="fa fa-check pr-10 tick"></i>Higher Visability in search</p>
+                    </div>
+
+                    <a class="btn btn-block" id="premium" onclick="AddPremium()">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

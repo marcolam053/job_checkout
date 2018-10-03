@@ -1,0 +1,64 @@
+<html>
+<title> Seek - Check Out</title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Seek : Check Out.">
+    <meta name="keywords" content="cart, job, check out">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Fanicon -->
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+</head>
+
+<body>
+    <!-- Menu bar -->
+    <div>
+        <nav class="nav light-blue darken-4">
+            <div>
+                <a class="pl-20 bold" href="index.html">Check Out</a>
+                <ul class="right" id="nav-mobile">
+                    <li class="pr-10"><button class="wave-effect wave-light btn red darken-4">Log Out</button></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart-grid">
+
+        <!-- cart card -->
+        <div class="card round-corner">
+            <p class="plan-card-title teal pt-20 pr-10 bold darken-1" id="title">Cart</p>
+            <div id="checkout_Card">
+                <!-- Generate Checkout table -->
+                <table class="centered pl-10" id="cart_list">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th> Sub-total </th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart_body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- JS Script -->
+<script src="./js/cart.js"></script>
+
+</html>
