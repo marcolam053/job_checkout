@@ -1,4 +1,4 @@
-**Seek : Job Ad Checkout FrontEnd Implementation**
+** Job Ad Checkout FrontEnd Implementation**
 
 **About**
 This is a web applcation FRONT-END IMPLEMENTATION for allowing user to select Ad plan and check out. 
